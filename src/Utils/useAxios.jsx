@@ -4,9 +4,10 @@ import { useSelector } from "react-redux";
 
 const axiosInstance = axios.create({
   // baseURL: import.meta.env.VITE_BASE_URL,
-  baseURL: "https://videotube-backend-1-jdn5.onrender.com/api/v1",
+  baseURL: "https://videotube-backend-1-jdn5.onrender.com",
   withCredentials: true,
 });
+// "https://videotube-backend-1-jdn5.onrender.com/api/v1",
 
 const useAxios = () => {
   const { user } = useSelector((state) => state.user);

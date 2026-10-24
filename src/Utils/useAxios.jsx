@@ -3,7 +3,8 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
+  // baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: "https://videotube-backend-1-jdn5.onrender.com/api/v1",
   withCredentials: true,
 });
 

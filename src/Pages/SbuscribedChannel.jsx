@@ -31,7 +31,10 @@ function ChannelSubscribedPage() {
             // Use your actual API call with sendRequest
             const response = await sendRequest({ url: `subscriptions/u/${subscriberId}`, method: 'GET' });
             console.log("response ",response);
-            
+            console.log("response:", response);
+             console.log("response.data:", response?.data);
+
+
             setSubscribedChannels(response.data); 
             
         } catch (err) {

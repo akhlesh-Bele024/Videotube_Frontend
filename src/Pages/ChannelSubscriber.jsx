@@ -37,9 +37,14 @@ function ChannelSubscribersPage() {
         }
     };
 
+    // useEffect(() => {
+    //     fetchSubscribers();
+    // }, []); 
     useEffect(() => {
-        fetchSubscribers();
-    }, []); 
+    if (channelId) {
+         fetchSubscribers();
+    }
+}, [channelId]);
 
     // --- Conditional Rendering ---
 
